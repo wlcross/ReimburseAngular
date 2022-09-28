@@ -63,4 +63,8 @@ public class RequestService {
 		userDao.save(reducer);
 		return reduction;
 	}
+	
+	public Request getRequest(int id) {
+		return requestDao.getReferenceById(id);
+	}
 }
