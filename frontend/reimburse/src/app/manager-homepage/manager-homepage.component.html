@@ -1,1 +1,38 @@
-<p>manager-homepage works!</p>
+<div class="body">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #c3ffa9;">
+        <div class="container">
+          <a class="navbar-brand" href="#">ERS</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link px-3" (click) = "viewManagerRequests()">View Open Requests</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link px-3" href = "#" onclick="return false" (click) = "viewRequests()">View Personal Requests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href = "#" onclick="return false" (click) = "createRequest()">Create Request</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link px-3" href = "#" onclick="return false" (click) = "logout()">Logout</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+
+      <div class = 'homepage'>
+        <div class="greeting-message">
+            <span [innerHTML]="greeting"></span> 
+        </div>
+
+        <div class="greeting-message">
+            <span [innerHTML]="remaining"></span> 
+        </div>
+
+        <div class="greeting-message">
+            <span [innerHTML]="openRequests"></span> 
+        </div>
+    </div>
+</div>
+
+
