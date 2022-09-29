@@ -10,6 +10,8 @@ import { HttpClient } from '@angular/common/http';
 export class HomepageComponent implements OnInit {
 
   user = "";
+  greeting = "";
+  remaining = "";
 
   constructor(private http:HttpClient, private router:Router) { }
 
@@ -28,8 +30,26 @@ export class HomepageComponent implements OnInit {
         }
         
         //this.router.navigate(['homepage'])
+
+        this.greeting = "Hello " + userObject.firstName + "!";
+        this.remaining = "You have $" + (userObject.remaining / 100) + " remaining.";
     }
     );
+  }
+
+  viewRequests() {
+    this.router.navigate(['requestlist']);
+  }
+
+  createRequest() {
+    this.router.navigate(['createrequest']);
+  }
+
+  logout() {
+    sessionStorage.clear;
+    this.greeting = "";
+    this.remaining = "";
+    this.router.navigate(['login']);
   }
 
 }
