@@ -20,7 +20,7 @@ public class UserService {
 	
 	public Integer login(String u, String p) {
 		Integer user = userDao.login(u, p);
-		System.out.println("Username: " + u + ", Password: " + p);
+		System.out.println("Username: " + u + ", Password: " + p + ", ID: " + user);
 		if (user == null) return -1;
 		return user;
 	}

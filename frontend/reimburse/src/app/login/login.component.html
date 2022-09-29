@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="login-body">
+    <div class = 'register-form'>
+        <div class="register-div">
+            <p>No account?</p>
+            <button type="button" class="btn btn-success btn-lg" (click) = "register()">Register</button>
+        </div>
+    </div>
+
+    <div class = 'login-form'>
+        <div class = "form-div"> 
+            <label for="username">Username</label>
+            <input type="text" name="username" class ="form-control" [(ngModel)]="username"/>
+        </div>
+        <div class = "form-div"> 
+            <label for="password">Password</label>
+            <input type="password" name="password" class ="form-control" [(ngModel)]="pass"/>
+        </div>
+        <div class="button-div">
+            <button type="button" class="btn btn-success btn-lg" (click) = "login()">Login</button>
+        </div>
+        <div class="error-message">
+            <span [innerHTML]="error"></span> 
+        </div>
+    </div>
+
+    <div class="login-title">
+        <img class="logo" src="assets\ERS_Logo.jpg" alt=""> 
+        <div class="title">Employee Reimbursement System</div>
+    </div>
+</div> 
