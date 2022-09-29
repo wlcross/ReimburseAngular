@@ -9,6 +9,7 @@ import { RequestViewComponent } from './request-view/request-view.component';
 import { ManagerHomepageComponent } from './manager-homepage/manager-homepage.component';
 import { ManagerRequestListComponent } from './manager-request-list/manager-request-list.component';
 import { ManagerRequestViewComponent } from './manager-request-view/manager-request-view.component';
+import { CreateRequestComponent } from './create-request/create-request.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'requestview', component: RequestViewComponent},
   {path: 'managerhomepage', component: ManagerHomepageComponent},
   {path: 'managerrequestlist', component: ManagerRequestListComponent},
-  {path: 'managerrequestview', component: ManagerRequestViewComponent}
+  {path: 'managerrequestview', component: ManagerRequestViewComponent},
+  {path: 'createrequest', component: CreateRequestComponent}
 ];
 
 @NgModule({

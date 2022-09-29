@@ -14,6 +14,7 @@ import { RequestViewComponent } from './request-view/request-view.component';
 import { ManagerHomepageComponent } from './manager-homepage/manager-homepage.component';
 import { ManagerRequestListComponent } from './manager-request-list/manager-request-list.component';
 import { ManagerRequestViewComponent } from './manager-request-view/manager-request-view.component';
+import { CreateRequestComponent } from './create-request/create-request.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ManagerRequestViewComponent } from './manager-request-view/manager-requ
     RequestViewComponent,
     ManagerHomepageComponent,
     ManagerRequestListComponent,
-    ManagerRequestViewComponent
+    ManagerRequestViewComponent,
+    CreateRequestComponent
   ],
   imports: [
     BrowserModule,
