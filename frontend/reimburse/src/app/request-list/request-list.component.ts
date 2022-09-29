@@ -46,7 +46,7 @@ export class RequestListComponent implements OnInit {
                   button.innerHTML = "View";
 
                   button.onclick = function() {
-                      sessionStorage.setItem("request", requestObject[i].id);
+                      sessionStorage.setItem("request", requestObject[i].rid);
                       window.location.assign("requestViewManager.html");
                   }
 
